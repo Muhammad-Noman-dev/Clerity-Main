@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Team from './components/Team';
 import Contact from './components/Contact';
+import './index.css'
 const App = () => {
   return (
     <div>
