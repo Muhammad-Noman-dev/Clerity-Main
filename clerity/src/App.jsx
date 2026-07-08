@@ -11,6 +11,15 @@ import './index.css'
 const App = () => {
   return (
     <div>
+        <Routes>
+            <Route to="/" element={<Home/>}/>
+            <Route to="/about" element={<About/>}/>
+            <Route to="/services" element={<Services/>}/>
+            <Route to="/portfolio" element={<Portfolio/>}/>
+            <Route to="/team" element={<Team/>}/>
+            <Route to="/contact" element={<Contact/>}/>
+
+          </Routes>
       <Navbar/>
       <Home/>
       <About/>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink , Routes , Route } from 'react-router-dom';
-import Navbar from './components/Navbar'
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
@@ -118,15 +117,7 @@ const Navbar = () => {
             <NavLink to="/contact" onClick={closeMenu} className="text-gray-200 hover:text-white py-2">Contact</NavLink>
           </div>
 
-          <Routes>
-            <Route to="/" element={<Home/>}/>
-            <Route to="/about" element={<About/>}/>
-            <Route to="/services" element={<Services/>}/>
-            <Route to="/portfolio" element={<Portfolio/>}/>
-            <Route to="/team" element={<Team/>}/>
-            <Route to="/contact" element={<Contact/>}/>
-
-          </Routes>
+        
 
           <div className="mt-auto pb-12">
             <button 
