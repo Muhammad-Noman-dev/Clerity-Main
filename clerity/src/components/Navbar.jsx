@@ -111,6 +111,16 @@ const Navbar = () => {
             <NavLink to="/contact" onClick={closeMenu} className="text-gray-200 hover:text-white py-2">Contact</NavLink>
           </div>
 
+          <Routes>
+            <Route to="/" element={<Home/>}/>
+            <Route to="/about" element={<About/>}/>
+            <Route to="/services" element={<Services/>}/>
+            <Route to="/portfolio" element={<Portfolio/>}/>
+            <Route to="/team" element={<Team/>}/>
+            <Route to="/contact" element={<Contact/>}/>
+
+          </Routes>
+
           <div className="mt-auto pb-12">
             <button 
               onClick={closeMenu}
